@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GadgetList</string>
+    <string name="rating">4.5</string>
+    <string name="category">Phone</string>
+    <string name="gadget_name">Gadget Name</string>
+    <string name="price_detail">Harga : $1,299</string>
+    <string name="rating_detail">Rating : 4.5</string>
+    <string name="watch_review_video">Watch Review Video</string>
+    <string-array name="gadget_list">
+        <item>iPhone 13 Pro Max|iPhone 13 Pro Max adalah ponsel canggih dengan desain premium, menampilkan tampilan layar yang indah dan kinerja tangguh. Dilengkapi dengan kamera berkualitas tinggi, pengguna dapat mengambil foto dan video yang luar biasa. Fitur-fitur inovatif seperti kemampuan merekam video ProRes, Dolby Vision HDR, dan ProRAW menambahkan daya tarik yang lebih besar pada ponsel ini.|$1,099|9.5/10|Smartphone|https://cdn.eraspace.com/media/catalog/product/i/p/iphone_13_pro_max_graphite_1.jpg|https://youtu.be/OFuVREGwhis</item>
+
+        <item>Samsung Galaxy S21 Ultra|Samsung Galaxy S21 Ultra merupakan smartphone andalan yang menawarkan tampilan layar yang luar biasa dengan refresh rate yang tinggi. Kamera yang hebat dengan kemampuan zoom optik yang kuat dan kualitas gambar yang tajam membuatnya menjadi pilihan yang menarik bagi penggemar fotografi. Performa yang kuat, fitur canggih, dan daya tahan baterai yang baik menjadi kelebihan lain dari perangkat ini.|$1,199|9.4/10|Smartphone|https://images.samsung.com/id/smartphones/galaxy-s21/buy/s21_ultra_basicgroup_kv_mo_img.jpg|https://youtu.be/dp6PogzQWiQ</item>
+
+        <item>MacBook Pro M1|MacBook Pro M1 adalah laptop revolusioner dengan performa luar biasa, didukung oleh chip M1 buatan Apple. Dengan baterai yang tahan lama, pengguna dapat bekerja sepanjang hari tanpa khawatir kehabisan daya. Tampilan yang mengesankan, keyboard yang nyaman, dan pengalaman pengguna yang mulus membuatnya menjadi pilihan utama untuk para profesional kreatif dan pengguna yang membutuhkan kinerja tinggi.|$1,299|9.7/10|Laptop|https://macstore.id/wp-content/uploads/2020/12/mbp-silver-gallery2-202011_GEO_US.jpeg|https://youtu.be/x1eG_8aasoY</item>
+
+        <item>Dell XPS 13|Dell XPS 13 adalah laptop yang menawarkan desain ramping dan konstruksi berkualitas tinggi. Performanya yang tangguh, tampilan layar yang memukau, dan keyboard yang responsif membuatnya menjadi pilihan yang sangat baik untuk produktivitas sehari-hari. Keberhasilan Dell dalam memadukan daya tahan baterai yang baik dengan ukuran yang kompak menjadikannya sebagai laptop yang ideal untuk mobilitas.|$999|9.2/10|Laptop|https://www.yangcanggih.com/wp-content/uploads/2021/04/Dell-XPS-13-9310-2021-2.jpg|https://youtu.be/iwoOC9A9lj0</item>
+
+        <item>Sony WH-1000XM4|Sony WH-1000XM4 adalah headphone nirkabel dengan kualitas audio yang luar biasa. Fitur-fitur noise-cancelling yang efektif memungkinkan pengguna menikmati musik tanpa gangguan dari suara luar. Dengan desain yang nyaman, daya tahan baterai yang baik, dan kualitas suara yang kaya, headphone ini cocok untuk para pecinta musik dan profesional yang sering bepergian.|$349|9.6/10|Headphone|https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//96/MTA-31541784/sony_sony_wh-1000xm4_black_wireless_noise_canceling_headphones_-_wh_1000xm4_-_garansi_resmi_full01_gq8d9vxb.jpg|https://youtu.be/bInJjmH31Hk</item>
+
+        <item>Nikon Z7 II|Nikon Z7 II adalah kamera mirrorless yang menawarkan kualitas gambar yang tinggi dan sistem fokus yang cepat. Desainnya yang ergonomis membuatnya nyaman digunakan dalam pemotretan jangka panjang. Dengan berbagai fitur canggih dan kemampuan merekam video 4K, kamera ini menjadi pilihan yang ideal bagi para fotografer profesional dan penggemar fotografi yang serius.|$2,999|9.3/10|Kamera Mirrorless|https://i.pcmag.com/imagery/reviews/00tFTVVEeZeReusEGMfo4B4-7.fit_lim.size_1050x591.v1613673393.jpg|https://youtu.be/pSZaCV74EsU</item>
+
+        <item>iPad Pro|iPad Pro adalah tablet yang menghadirkan performa tinggi dengan chip M1 buatan Apple. Dengan tampilan layar yang luar biasa dan dukungan untuk Apple Pencil, pengguna dapat menggambar, mengerjakan tugas, atau menonton konten dengan pengalaman yang memukau. Fleksibilitas dan daya tangguh yang ditawarkan oleh iPad Pro menjadikannya sebagai pilihan yang sangat baik untuk produktivitas dan hiburan.|$799|9.5/10|Tablet|https://asset.kompas.com/crops/osPYFY65qupECj5J7sRMMBtikyk=/147x77:861x552/750x500/data/photo/2018/10/31/2045622212.png|https://youtu.be/WJAhf_kRzGQ</item>
+
+        <item>Oculus Quest 2|Oculus Quest 2 adalah perangkat virtual reality yang memberikan pengalaman VR yang menakjubkan. Dengan kualitas visual yang baik dan kontroler yang responsif, pengguna dapat terlibat dalam berbagai pengalaman VR yang mendalam dan imersif. Kebebasan tanpa kabel dan kemampuan untuk memainkan game VR yang populer menjadikannya sebagai pilihan yang menarik bagi para pecinta game.|$299|9.4/10|Virtual Reality|https://i5.walmartimages.com/asr/8ce8a06f-77ce-4a67-b7d2-c697da49b82b.9ef1c199fb54355e1df08004c02305c4.jpeg|https://youtu.be/6wA5DHapD7A</item>
+
+        <item>Garmin Forerunner 945|Garmin Forerunner 945 adalah perangkat wearable yang dirancang khusus untuk pelacak aktivitas dan olahraga. Dilengkapi dengan fitur-fitur canggih seperti pelacakan GPS yang akurat, pengukuran performa olahraga yang lengkap, dan baterai tahan lama, perangkat ini sangat cocok bagi mereka yang menjalani gaya hidup aktif dan ingin memantau kemajuan mereka dalam berbagai aktivitas.|$599|9.2/10|Wearable|https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//95/MTA-3708436/garmin_garmin-forerunner-945-smartwatch_full06.jpg|https://youtu.be/OQrrF4k-PXc</item>
+
+        <item>Amazon Echo Dot|Amazon Echo Dot adalah smart speaker dengan kualitas suara yang baik dan kontrol suara yang lancar. Dengan dukungan asisten virtual seperti Alexa, pengguna dapat mengontrol perangkat rumah pintar, mendengarkan musik, mendapatkan informasi, dan melakukan banyak lagi hanya dengan menggunakan suara. Ukurannya yang kompak menjadikannya pilihan yang sempurna untuk ditempatkan di berbagai ruangan dalam rumah.|$49|9.0/10|Smart Speaker|https://static.bmdstatic.com/pk/product/large/5ec4e06463f90.jpg|https://youtu.be/CJGShJVa7kY</item>
+
+    </string-array>
+</resources>
