@@ -56,7 +56,7 @@ class DetailActivity : AppCompatActivity(R.layout.activity_detail) {
 
     @SuppressLint("SetTextI18n")
     private fun setValues(gadgetInfo: GadgetModel) {
-        binding.detailImg.load(gadgetInfo.imageUrl){
+        binding.imgGadget.load(gadgetInfo.imageUrl){
             crossfade(true)
             placeholder(R.drawable.baseline_image_24)
         }

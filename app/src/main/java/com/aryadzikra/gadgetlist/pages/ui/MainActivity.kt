@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,7 @@ import com.aryadzikra.gadgetlist.R
 import com.aryadzikra.gadgetlist.databinding.ActivityMainBinding
 import com.aryadzikra.gadgetlist.model.GadgetModel
 import com.aryadzikra.gadgetlist.pages.adapter.GadgetAdapter
+import com.aryadzikra.gadgetlist.theme.ThemeSharedPreference
 import com.aryadzikra.gadgetlist.utils.GADGET_KEY
 import com.aryadzikra.gadgetlist.utils.SPAN_COUNT_ONE
 import com.aryadzikra.gadgetlist.utils.SPAN_COUNT_TWO
@@ -30,17 +32,26 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         val listGadget : MutableList<GadgetModel> = getGadgetList()
         showGadgetList(listGadget)
         setToolbar()
+        setCurrentTheme()
     }
 
     private fun setToolbar() {
-        binding.toolbarMain.setOnMenuItemClickListener {item ->
-            when(item.itemId) {
-                R.id.action_list_view -> {
-                    switchListLayout(gridLayoutManager)
-                    switchIcon(item)
-                    true
+        binding.actionView.setOnClickListener {
+            switchListLayout(gridLayoutManager)
+            switchIcon()
+        }
+
+        binding.actionTheme.setOnClickListener {
+            when(ThemeSharedPreference(this).theme) {
+                0 -> {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    ThemeSharedPreference(this).theme = 1
                 }
-                else -> false
+
+                1 -> {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    ThemeSharedPreference(this).theme = 0
+                }
             }
         }
     }
@@ -91,11 +102,18 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
-    private fun switchIcon(item : MenuItem) {
+    private fun switchIcon() {
         if(gridLayoutManager.spanCount == SPAN_COUNT_TWO){
-            item.icon = resources.getDrawable(R.drawable.baseline_grid_view_24)
+            binding.actionView.setImageResource(R.drawable.sharp_grid_view_24)
         } else {
-            item.icon = resources.getDrawable(R.drawable.baseline_view_list_24)
+            binding.actionView.setImageResource(R.drawable.baseline_view_list_24)
+        }
+    }
+
+    private fun setCurrentTheme() {
+        when(ThemeSharedPreference(this).theme) {
+            0 -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            1 -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         }
     }
 }
